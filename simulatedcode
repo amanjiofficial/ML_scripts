@@ -9,7 +9,7 @@ def anneal(sol):
     alpha = 0.9
     while T > T_min:
         i = 1
-        while i <= 100:
+        while i <= 10:
             new_sol = neighbor(sol)
             new_cost = cost(new_sol)
             ap = acceptance_probability(old_cost, new_cost, T)
