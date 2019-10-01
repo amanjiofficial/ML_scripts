@@ -7,7 +7,7 @@ def anneal(sol):
     T = 1.0
     T_min = 0.00001
     alpha = 0.9
-    while T > T_min:
+    while T > T:
         i = 1
         while i <= 100:
             new_sol = neighbor(sol)
